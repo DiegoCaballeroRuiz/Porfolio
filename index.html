@@ -1,92 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diego Caballero - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Caballero - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="title">
-    <h1 style="text-align:center;">Diego Caballero</h1>
-    <h3 style="text-align:center;">Game and software developer</h3>
-  </header>
+    <header class="title">
+        <h1>Diego Caballero</h1>
+        <h3>Game and software developer</h3>
+    </header>
+
+    <main class="sections">
+        <section>
+            <h3>About me</h3>
+            <p>
+                I've been creating videogames since I first learnt programming in 2022. I started my degree on videogame
+                development at UCM (Universidad complutense de Madrid) in 2023, which I am still studying to this day.
+                In
+                the meantime, I developed several projects, including games for Game Jams and software projects outside
+                the
+                videogame industry.
+            </p>
+        </section>
+
+        <section>
+            <h3>Skills</h3>
+            <div class="skillsContainer">
+                <div class="skillCategory">
+                    <h4>Languages</h4>
+                    <div class="skillList">
+                        <span>C/C++</span>
+                        <span>C#</span>
+                        <span>Lua</span>
+                        <span>Bash</span>
+                    </div>
+                </div>
+
+                <div class="skillCategory">
+                    <h4>GameDev Frameworks</h4>
+                    <div class="skillList">
+                        <span>Unity</span>
+                        <span>Godot</span>
+                        <span>SDL</span>
+                        <span>Raylib</span>
+                    </div>
+                </div>
+
+                <div class="skillCategory">
+                    <h4>Tools</h4>
+                    <div class="skillList">
+                        <span>Git</span>
+                        <span>CMake</span>
+                        <span>Linux</span>
+                    </div>
+                </div>
+
+                <div class="skillCategory">
+                    <h4>Soft Skills</h4>
+                    <div class="skillList">
+                        <span>Communication</span>
+                        <span>Learning new frameworks</span>
+                        <span>Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>My games</h3>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://ucm-fdi-disia.github.io/Carom/carom.html">
+                        Carom - 2025
+                    </a>
+                    <a href="https://ucm-fdi-disia.github.io/Carom/carom.html">
+                        <img src="images/Carom.png" alt="Carom/Image">
+                    </a>
+                    <p>
+                        A carom billiards inspired Rouguelike made engine-less, entirely in C++, using the SDL library
+                    </p>
+                    <p>
+                        C++ • SDL
+                    </p>
+                </div>
+
+                <div class="game">
+                    <a href="https://erierierieri.itch.io/patrem-omnipotentem">
+                        Patrem Omnipotentem - 2026
+                    </a>
+                    <a href="https://erierierieri.itch.io/patrem-omnipotentem">
+                        <img src="images/PatremOmnipotentem.png" alt="Patrem/Image">
+                    </a>
+                    <p>
+                        <span></span> A slow paced narration and combat adventure in a dystopian world controlled by
+                        machines
+                    </p>
+                    <p>
+                        Godot • Gdscript
+                    </p>
+                </div>
+
+                <div class="game">
+                    <a href="https://diegocaballero.itch.io/ball-istic-hamster">
+                        BallIstic Hamster - 2025
+                    </a>
+                    <a href="https://diegocaballero.itch.io/ball-istic-hamster">
+                        <img src="images/BallIsticHamster.png" alt="BallIsticHamster/Image">
+                    </a>
+                    <p>
+                        A frustrating fodian game about a hamster climbing for a golden snack
+                    </p>
+                    <p>
+                        Unity • C#
+                    </p>
+                </div>
+
+                <div class="game">
+                    <a href="https://diegocaballero.itch.io/spinning-spider">
+                        Spinning Spider - 2024
+                    </a>
+                    <a href="https://diegocaballero.itch.io/spinning-spider">
+                        <img src="images/SpinningSpider.png" alt="SpinningSpider/Image">
+                    </a>
+                    <p>
+                        A silly-looking spider-swinging arcade game built in just two days
+                    </p>
+                    <p>
+                        Unity • C#
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Other Projects</h3>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://github.com/DiegoCaballeroRuiz/Project-Finder/tree/main">
+                        Project Finder - 2025
+                    </a>
+                    <p>
+                        A bash script that reduces friction with tmux sessions using fzf over a plain text project
+                        database
+                    </p>
+                    <p>
+                        bash • tmux • fzf
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
-
-  <div class="sections">
-    <h3>About me</h3>
-    <p>
-      My name is Diego Caballero, I am 20 years old and I am studying Game Development at Universidad Complutense in
-      Madrid, Spain. I have been making games since 2022, mostly focusing on small Game Jams and university projects,
-      with some experimentation on my own. I may not have a lot of experience but I can get things done while having
-      zero issues admitting my mistakes and learning from them.
-    </p>
-
-    <h3 style="padding-top: 2%;">My skillset</h3>
-    <table>
-      <tr>
-        <td>
-          <h4>Soft skills</h4>
-          <p>Problem solving, creating documentation, teamwork and communication are some of my biggest strengths.</p>
-        </td>
-        <td>
-          <h4>Software</h4>
-          <p>I have a lot of experience with <span>C#, C++ and Lua. Unity, Godot, SDL and Love2D are my
-              engines/frameworks of choice</span> for most of my projects, but I have some knowledge on OpenGL, Raylib
-            and
-            Phaser, with some JavaScript, HTML and CSS here and there. I am quite versed in <span>git</span> as well.
-          </p>
-        </td>
-        <td>
-          <h4>Outside software</h4>
-          <p>I speak <span>English and Spanish and I have written theater scripts in both languages.</span> I can use
-            that experience to write and translate dialogs, lore or descriptions for a project</p>
-        </td>
-      </tr>
-    </table>
-
-    <h3>My projects</h3>
-
-    <div class="gameContainer">
-
-      <div class="game">
-        <a href="https://ucm-fdi-disia.github.io/Carom/carom.html">Carom - 2025</a>
-        <a href="https://ucm-fdi-disia.github.io/Carom/carom.html"><img src="images/Carom.png" alt="Carom/Image"></a>
-        <p><span>My most recent project:</span> A carom billiards Rouguelike made entirely in SDL and C++
+    <footer>
+        <p>
+            Contact me via E-mail: dicaballero05@gmail.com
         </p>
-      </div>
+        <p>
+            Or find me in
+            <a href="https://diegocaballero.itch.io/">
+                itch.io
+            </a>
+            and
+            <a href="https://github.com/DiegoCaballeroRuiz">
+                Github
+            </a>
+        </p>
+    </footer>
 
-      <div class="game">
-        <a href="https://diegocaballero.itch.io/ball-istic-hamster"> BallIstic Hamster - 2025</a>
-        <a href="https://diegocaballero.itch.io/ball-istic-hamster"><img src="images/BallIsticHamster.png"
-            alt="BallIsticHamster/Image"></a>
-        <p><span>(Game Jam)</span> A fodian game about a hamster climbing for a golden snack</p>
-      </div>
-
-      <div class="game">
-        <a href="https://diegocaballero.itch.io/spinning-spider"> Spinning Spider - 2024</a>
-        <a href="https://diegocaballero.itch.io/spinning-spider"><img src="images/SpinningSpider.png"
-            alt="SpinningSpider/Image"></a>
-        <p><span>(Game Jam)</span> A silly spider-swinging arcade game</p>
-      </div>
-
-      <div class="game">
-        <a href="https://chichord.itch.io/subterra"> SubTerra - 2023 </a>
-        <a href="https://chichord.itch.io/subterra"><img src="images/SubTerra.png" alt="SubTerra/Image"></a>
-        <p><span>My first released project:</span> An adventure and resource management drilling game made in Unity</p>
-      </div>
-
-    </div>
-
-  </div>
-
-  <footer style="text-align:center;">
-    <p> Contact me via E-mail: dicaballero05@gmail.com </p>
-    <p> Or find me in <a href="https://diegocaballero.itch.io/"> itch.io </a> </p>
-  </footer>
 </body>
-
 </html>

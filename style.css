@@ -5,33 +5,43 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.2rem;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 1.15rem;
   background-color: #121212;
-  color: #e0e0e0;
+  color: #e6e6e6;
   line-height: 1.6;
-  padding: 1rem;
 }
 
-span {
-  font-weight: bold;
-  font-style: italic;
+.sections {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
 }
 
 .title {
   text-align: center;
-  margin-bottom: 2rem;
+  padding: 3rem 1rem 2rem 1rem;
 }
 
 h1 {
-  font-size: 2.5rem;
-  color: #ffffff;
+  font-size: 2.8rem;
+  color: white;
+}
+
+.title h3 {
+  font-weight: 400;
+  opacity: 0.8;
 }
 
 h3 {
-  color: #bb86fc;
   text-align: center;
+  color: #bb86fc;
   margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 
 h4 {
@@ -39,27 +49,48 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
-.sections {
-  max-width: 1000px;
-  margin: auto;
-  padding: 1rem;
+p {
+  margin-bottom: 0.8rem;
 }
 
-.sections section {
-  margin-bottom: 2rem;
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
-/* Table (Skills Section) */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 2rem;
-}
-
-td {
-  vertical-align: top;
-  padding: 1rem;
+.skillCategory {
+  background-color: #1b1b1b;
   border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  width: 250px;
+  text-align: center;
+}
+
+.skillCategory h4 {
+  margin-bottom: 0.8rem;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.skillList span {
+  background-color: #161616;
+  border: 1px solid #2c2c2c;
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+.skillCategory:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .gameContainer {
@@ -70,27 +101,40 @@ td {
 }
 
 .game {
-  background-color: #1e1e1e;
+  background-color: #1b1b1b;
   border: 1px solid #2c2c2c;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 1rem;
-  width: 325px;
+  width: 300px;
   text-align: center;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.2s;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .game:hover {
-  transform: scale(1.03);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.game p {
+  background-color: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #d0d0d0;
+  width: 100%;
 }
 
 .game img {
   width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin: 1rem 0;
+  border-radius: 6px;
+  margin: 0.8rem 0 1rem 0;
 }
 
 .game a {
@@ -106,8 +150,10 @@ td {
 
 footer {
   margin-top: 3rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid #2c2c2c;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #999;
 }
 
@@ -120,21 +166,8 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .game {
     width: 90%;
-  }
-
-  table {
-    display: block;
-    overflow-x: auto;
-  }
-
-  td {
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #2c2c2c;
   }
 }
